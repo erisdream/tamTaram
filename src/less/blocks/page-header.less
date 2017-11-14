@@ -1,0 +1,84 @@
+.page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 320px;
+    margin: 0 auto;
+    background-color: @dark-grey;
+
+
+    @media @tablet {
+        background-color: @purple;
+        padding: 13px 0 0;
+    }
+
+    @media @desktop {
+        padding-top: 6px;
+    }
+
+    &__logo {
+
+        @media @tablet {
+            order: -5;
+            padding: 10px 0 19px 5px;
+        }
+
+        @media @desktop {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__search {
+        padding: 6px 14px 10px 0;
+
+        @media @tablet {
+            order: -1;
+            background-color: @purple;
+            padding-right: 26px;
+            padding-bottom: 15px;
+        }
+
+        @media @desktop {
+            padding-top: 1px;
+        }
+    }
+
+    &__nearest {
+        background-color: @dark-grey;
+        color: white;
+        line-height: 7px;
+        letter-spacing: .1px;
+        font-weight: 700;
+        font-size: 12px;
+        padding-left: 20px;
+
+        @media @tablet {
+            order: -10;
+            background-color: @purple;
+            padding-left: 26px;
+        }
+
+        @media @desktop {
+            font-size: 11px;
+            line-height: 3px;
+        }
+
+        &--salon {
+            text-transform: uppercase;
+        }
+
+        &--title {
+            text-transform: none;
+        }
+    }
+
+    @media @tablet {
+        width: 100%;
+    }
+
+    @media @desktop {
+        max-width: 1440px;
+    }
+}
+
+
